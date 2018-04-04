@@ -39,7 +39,7 @@ def main():
     new_offset = None
     today = now.day
     hour = now.hour
-    boolean = true
+    boolean = True
     while boolean:
         greet_bot.get_updates(new_offset)
 
@@ -63,7 +63,7 @@ def main():
             today += 1
 
         new_offset = last_update_id + 1
-        boolean = false
+        boolean = False
 
 if __name__ == '__main__':  
     try:
