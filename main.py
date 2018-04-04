@@ -39,8 +39,8 @@ def main():
     new_offset = None
     today = now.day
     hour = now.hour
-    boolean = True
-    while boolean:
+
+    while True:
         greet_bot.get_updates(new_offset)
 
         last_update = greet_bot.get_last_update()
@@ -63,10 +63,9 @@ def main():
             today += 1
 
         new_offset = last_update_id + 1
-        boolean = False
 
 if __name__ == '__main__':  
     try:
-        main()
+        main()Ы
     except KeyboardInterrupt:
         exit()
